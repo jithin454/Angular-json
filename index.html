@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"
+    ></script>
+    <script type="text/javascript" src="controller.js"></script>
+  </head>
+  <body ng-app="taskApp">
+    <div ng-controller="taskCtrl">
+      <table align="center" border="1">
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Type</th>
+        </tr>
+        <tr ng-repeat="sample in employees">
+          <td>{{sample.id}}</td>
+          <td>{{sample.name}}</td>
+          <td>{{sample.Type}}</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
